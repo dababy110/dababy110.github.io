@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="./src/assets/favicon.png"
+    />
+    <script defer src="src/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6c2a0ab774.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Scrolling-Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
+      integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <main class="container">
+      <!--div class="pointer-box"> 
+      </div-->
+      <section class="section__container-home" data-section-name="s-one">
+        <header class="header__container">
+          <div class="menu__header">
+            <div class="menu__title">
+              <a href="#"><span>Portafolio Website</span></a>
+            </div>
+            <nav class="menu__nav">
+              <ul id="links">
+                <li>
+                  <a href="#"><span>Home</span></a>
+                </li>
+                <li>
+                  <a href="#aboutMe"><span>About me</span></a>
+                </li>
+                <li>
+                  <a href="#projects"><span>Projects</span></a>
+                </li>
+                <li>
+                  <a href="#contact"><span>Contact</span></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="menu__social">
+              <ul>
+                <li>
+                  <a href="https://twitter.com/DavidVargas1102" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/david.vargas_10/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/dababy110" target="_blank"
+                    ><i class="fa-brands fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="icon-menu">
+            <i class="fa-solid fa-bars" id="bars-open"></i>
+            <i class="fa-solid fa-xmark" id="bars-close"></i>
+          </div>
+        </header>
+        <div class="cover__container">
+          <div class="front__header">
+            <div class="front__title">
+              <h1>Web Developer</h1>
+              <h2>David Vargas Arias</h2>
+              <button>Download CV <i class="fa-solid fa-download"></i></button>
+            </div>
+            <div class="front__card">
+              <div class="front__card-1"></div>
+              <div class="front__card-2"></div>
+              <div class="front__card-3"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section__container-aboutMe scroll"
+        id="aboutMe"
+        data-section-name="s-two"
+      >
+        <div class="about__section">
+          <div class="container__about">
+            <div class="main__about">
+              <img class="about__img" src="src/assets/AboutMe.jpg" alt="" />
+              <div class="about__content">
+                <h1 class="about__title">David Vargas Arias</h1>
+                <p>⚛️ React Frontend</p>
+                <p>
+                  🕹️ Self Taught Programmer and Industrial Electronics student
+                </p>
+                <h3>TECHNOLOGIES</h3>
+                <div class="about__tech">
+                  <div class="tech__img">
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="tech__img">
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="tech__img">
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+                  <div class="tech__img">
+                    <i class="fa-brands fa-react"></i>
+                  </div>
+                  <div class="tech__img">
+                    <i class="fa-brands fa-python"></i>
+                  </div>
+                  <div class="tech__img">
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <div class="tech__img">
+                    <i class="fa-brands fa-git-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="who__about">
+              <h1>Who am I?</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                vel itaque aliquam eius repudiandae ut rerum soluta perspiciatis
+                et quasi, adipisci, libero harum asperiores architecto nam fugit
+                repellendus vero accusantium!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section__container-projects scroll"
+        id="projects"
+        data-section-name="s-three"
+      >
+        <div class="container-projects">
+          <h1>My recent <span>works</span></h1>
+          <div class="container-filter">
+            <button class="btn-all" onclick="filterObjects('all')">All</button>
+            <button class="btn" onclick="filterObjects('react')">React</button>
+            <button class="btn" onclick="filterObjects('javaScript')">
+              JavaScript
+            </button>
+            <button class="btn" onclick="filterObjects('python')">
+              Python
+            </button>
+            <!--button class="btn" onclick="filterObjects('all')">React</button-->
+          </div>
+          <div class="container-cards">
+            <div class="card react javaScript">
+              <img class="img" src="src/assets/WeatherApp.PNG" alt="" />
+              <div class="text-box">
+                <p class="text title">Weather App</p>
+                <p class="text descrip">
+                  An App in which you can see the weather of any country in real
+                  time and you have a map for see the place
+                </p>
+                <span class="icons">
+                  <a
+                    href="https://github.com/dababy110/weather-app"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                  <a
+                    href="https://dababy110.github.io/weather-app/"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-pager"></i>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <!--div class="card">
+              <img class="img" src="src/assets/WeatherApp.PNG" alt="" />
+              <div class="text-box">
+                <p class="text title">To do list</p>
+                <p class="text descrip">
+                  An App in which you can do a list of things that do you have
+                  to do and make reminders for yourself
+                </p>
+                <span class="icons">
+                  <!--a
+                    href="#"
+                    target="#"
+                  >
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                  <a
+                    href="#"
+                    target="#"
+                  >
+                    <i class="fa-solid fa-pager"></i>
+                  </a>
+
+                  <span><b> In process </b></span>
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <img class="img" src="src/assets/WeatherApp.PNG" alt="" />
+              <div class="text-box">
+                <p class="text title">Weather App</p>
+                <p class="text descrip">
+                  An App in which you can see the weather of any country in real
+                  time and you have a map for see the place and make reminders
+                  for yourselft
+                </p>
+                <span class="icons">
+                  <a
+                    href="https://github.com/dababy110/weather-app"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-square-github"></i>
+                  </a>
+                  <a
+                    href="https://dababy110.github.io/weather-app/"
+                    target="_blank"
+                  >
+                    <i class="fa-solid fa-pager"></i>
+                  </a>
+                </span>
+              </div>
+            </div-->
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section__container-contact scroll"
+        id="contact"
+        data-section-name="s-four"
+      >
+        <div class="img-container">
+          <h1>Got a project in <span>mind?</span></h1>
+          <img src="src/assets/form-img.png" alt="" />
+        </div>
+        <div class="form-container">
+          <form
+            method="POST"
+            action="https://formsubmit.co/24bac8979d2c41080b9f4b8d9ffc7f56"
+            class="form"
+          >
+            <div class="name-group">
+              <label class="name-label">Your Name</label>
+              <input
+                class="name-input"
+                type="name"
+                name="subject"
+                autocomplete="off"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="email-group">
+              <label class="email-label">Your Email</label>
+              <input
+                class="email-input"
+                type="email"
+                name="email"
+                autocomplete="off"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="msj-group">
+              <label class="msj-label">Your Message</label>
+              <textarea
+                name="comments"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="button-group">
+              <button class="button">
+                Send message
+                <div class="icon" type="submit">
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+                    >
+                  </path>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
